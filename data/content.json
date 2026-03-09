@@ -1,6 +1,6 @@
 {
   "siteName": "SkyKorg HealthCare",
-"nav": {
+  "nav": {
     "home": "Home",
     "providersolution": "Provider Solutions",
     "payersolutions": "Payer Solutions",
@@ -18,13 +18,11 @@
     "metaTitle": "SkyKorg Healthcare | Medical Billing & Revenue Cycle Management Experts",
     "metaDescription": "SkyKorg Healthcare provides medical billing, RCM services, prior authorization, DME billing, compliance solutions, and virtual healthcare assistants to providers and payers."
   },
-
   "providersolutions": {
     "title": "Provider Solutions",
     "metaTitle": "Healthcare Provider Solutions | Medical Billing & RCM Services",
     "metaDescription": "Comprehensive healthcare provider solutions including medical billing, coding, denial management, prior authorization, and virtual medical assistants.",
     "categories": {
-
       "specialties": {
         "title": "Medical Billing for Healthcare Specialties",
         "items": {
@@ -70,7 +68,6 @@
           }
         }
       },
-
       "revenuecycle": {
         "title": "Revenue Cycle Management Services",
         "items": {
@@ -116,7 +113,6 @@
           }
         }
       },
-
       "virtualassistants": {
         "title": "Healthcare Virtual Assistants",
         "items": {
@@ -134,7 +130,6 @@
           }
         }
       },
-
       "otherservices": {
         "title": "Additional Healthcare Services",
         "items": {
@@ -178,7 +173,6 @@
       }
     }
   },
-
   "payersolutions": {
     "title": "Healthcare Payer Solutions",
     "metaTitle": "Healthcare Payer Services | Claims Processing & Adjudication",
@@ -196,7 +190,6 @@
       "Medicare Part D"
     ]
   },
-
   "resources": {
     "title": "Healthcare Industry Resources",
     "metaTitle": "Healthcare Blogs, Case Studies & Industry Resources",
@@ -211,17 +204,16 @@
       "Whitepapers"
     ]
   },
-
   "about": {
     "title": "About SkyKorg Healthcare",
     "metaTitle": "About SkyKorg Healthcare | Medical Billing Company",
-    "metaDescription": "SkyKorg Healthcare is a trusted medical billing and RCM outsourcing company helping healthcare providers increase revenue and efficiency."
+    "metaDescription": "SkyKorg Healthcare is a trusted medical billing and RCM outsourcing company helping healthcare providers increase revenue and efficiency.",
+    "body": ""
   },
-
   "contact": {
     "title": "Contact SkyKorg Healthcare",
     "metaTitle": "Contact SkyKorg Healthcare | Medical Billing Consultation",
-    "metaDescription": "Contact SkyKorg Healthcare for medical billing, RCM services, prior authorization support, and healthcare outsourcing solutions."
+    "metaDescription": "Contact SkyKorg Healthcare for medical billing, RCM services, prior authorization support, and healthcare outsourcing solutions.",
   },
   "forms": {
     "name": "Name",
