@@ -226,5 +226,9 @@
     "quoteInfo": "You're requesting a quote for:",
     "thanks": "Thanks! We received your request.",
     "contactThanks": "Thanks! We received your message."
+  },
+  "services": {
+    "title": "",
+    "body": ""
   }
 }

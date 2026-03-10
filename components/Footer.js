@@ -5,7 +5,7 @@ export default function Footer() {
       <div className="container-custom py-16 grid md:grid-cols-4 gap-10 text-gray-400">
         <div>
           <h3 className="text-white font-bold mb-4">SkyKorg Healthcare</h3>
-          <p>Global provider of heavy industrial components and engineered solutions.</p>
+          <p>SkyKorg HealthCare provides reliable medical billing and Revenue Cycle Management (RCM) services to help healthcare providers streamline operations, improve reimbursements, and focus on quality patient care.</p>
         </div>
         <div>
           <h4 className="text-white font-semibold mb-4">Company</h4>
