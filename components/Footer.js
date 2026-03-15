@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -10,26 +11,27 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-semibold mb-4">Company</h4>
           <ul className="space-y-2">
-            <li>About</li>
-            <li>Careers</li>
-            <li>News</li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
+            {/* <li><Link href="">Careers</Link></li>
+            <li><Link href="">News</Link></li> */}
           </ul>
         </div>
         <div>
           <h4 className="text-white font-semibold mb-4">Services</h4>
           <ul className="space-y-2">
-            <li>Provider Solutions</li>
-            <li>Payer Solutions</li>
-            <li>DME Billing</li>
-            <li>Prior Auth</li>
-            <li>Compliance</li>
-            <li>Resources</li>
+            <li><Link href="/provider-solutions">Provider Solutions</Link></li>
+            <li><Link href="/payer-solutions">Payer Solutions</Link></li>
+            <li><Link href="/provider-solutions/dme-billing-services">DME Billing</Link></li>
+            <li><Link href="/provider-solutions/prior-authorization-services">Prior Auth</Link></li>
+            <li><Link href="/compliance">Compliance</Link></li>
+            {/* <li><Link href="">Resources</Link></li> */}
             
           </ul>
         </div>
         <div>
           <h4 className="text-white font-semibold mb-4">Contact</h4>
-          <p>info@skykorghealthcare.com</p>
+          <p><Link href="mailto:info@skykorghealthcare.com">info@skykorghealthcare.com</Link></p>
         </div>
       </div>
       <div className="text-center py-6 text-gray-600 border-t border-gray-800">
