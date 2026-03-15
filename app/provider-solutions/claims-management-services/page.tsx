@@ -1,0 +1,291 @@
+import Image from "next/image";
+import Link from "next/link";
+import EnquiryForm from "@/components/EnquiryForm";
+
+export const metadata = {
+  title: "Denial Management Services | SkyKorg Healthcare",
+  description:
+    "SkyKorg Healthcare provides professional denial management services to reduce claim denials, improve reimbursement rates, and optimize healthcare revenue cycle management."
+};
+
+export default function DenialManagementPage() {
+  return (
+    <main className="bg-gray-50">
+
+      {/* HERO */}
+      <section className="relative py-24 text-white">
+
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/images/provider-solutions/provider-hero.jpg"
+            alt="Denial Management Services"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        <div className="absolute inset-0 bg-black/70"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6">
+
+          <h1 className="text-4xl md:text-5xl font-bold">
+            Claims Denial Management Services
+          </h1>
+
+          <div className="w-16 h-1 bg-orange-500 mt-4"></div>
+
+          <p className="mt-6 max-w-3xl text-gray-200">
+            SkyKorg Healthcare helps healthcare providers identify,
+            manage, and prevent claim denials through advanced denial
+            management strategies and revenue cycle expertise.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* CONTENT */}
+      <section className="py-16">
+
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+
+          {/* MAIN CONTENT */}
+          <article className="lg:col-span-2 space-y-12">
+
+            {/* INTRO */}
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">
+                What is Denial Management?
+              </h2>
+
+              <p className="text-gray-700 leading-relaxed">
+                Denial management is the process of identifying,
+                analyzing, and resolving medical claim denials to ensure
+                healthcare providers receive proper reimbursement for
+                services delivered.
+              </p>
+
+              <p className="text-gray-700 mt-4 leading-relaxed">
+                Effective denial management helps reduce revenue loss,
+                improve claim acceptance rates, and optimize the
+                healthcare revenue cycle.
+              </p>
+            </section>
+
+            {/* TYPES */}
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">
+                Types of Claim Denials
+              </h2>
+
+              <ul className="space-y-3 text-gray-700">
+                <li>✔ Hard denials – irreversible claim rejections</li>
+                <li>✔ Soft denials – claims that can be corrected and resubmitted</li>
+                <li>✔ Preventable denials due to billing errors</li>
+                <li>✔ Clinical denials based on medical necessity</li>
+                <li>✔ Administrative denials due to missing documentation</li>
+              </ul>
+            </section>
+
+            {/* DIFFERENCE */}
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">
+                Claim Denials vs Claim Rejections
+              </h2>
+
+              <p className="text-gray-700 leading-relaxed">
+                Claim denials occur when an insurance company processes a
+                claim but refuses payment due to policy or documentation
+                issues. Claim rejections occur before claim processing
+                when errors are detected in submitted claims.
+              </p>
+
+              <p className="text-gray-700 mt-4 leading-relaxed">
+                Both require proper analysis and correction to ensure
+                reimbursement and maintain healthy cash flow for
+                healthcare providers.
+              </p>
+            </section>
+
+            {/* IMPORTANCE */}
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">
+                Why Denial Management Matters
+              </h2>
+
+              <ul className="space-y-3 text-gray-700">
+                <li>✔ Reduce revenue loss from denied claims</li>
+                <li>✔ Improve claim acceptance rates</li>
+                <li>✔ Identify root causes of denials</li>
+                <li>✔ Improve billing process efficiency</li>
+                <li>✔ Optimize revenue cycle management</li>
+              </ul>
+            </section>
+
+            {/* PROCESS */}
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">
+                Our Denial Management Process
+              </h2>
+
+              <ol className="list-decimal pl-5 space-y-3 text-gray-700">
+                <li>Identify denied claims and root causes</li>
+                <li>Analyze denial codes and payer requirements</li>
+                <li>Correct billing or documentation errors</li>
+                <li>Resubmit corrected claims or file appeals</li>
+                <li>Monitor claim status and reimbursement</li>
+              </ol>
+            </section>
+
+            {/* BENEFITS */}
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">
+                Benefits of Professional Denial Management
+              </h2>
+
+              <ul className="space-y-3 text-gray-700">
+                <li>✔ Faster recovery of denied claims</li>
+                <li>✔ Increased reimbursement rates</li>
+                <li>✔ Reduced administrative burden</li>
+                <li>✔ Improved billing workflow</li>
+                <li>✔ Better financial performance</li>
+              </ul>
+            </section>
+
+            {/* SKYKORG */}
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">
+                Why Choose SkyKorg Healthcare
+              </h2>
+
+              <ul className="space-y-3 text-gray-700">
+                <li>✔ Expert denial management specialists</li>
+                <li>✔ Advanced claim analysis tools</li>
+                <li>✔ 99.9% billing accuracy</li>
+                <li>✔ HIPAA compliant processes</li>
+                <li>✔ Dedicated revenue cycle support</li>
+              </ul>
+            </section>
+
+            {/* FAQ */}
+            <section>
+              <h2 className="text-2xl font-semibold mb-6">
+                Denial Management FAQs
+              </h2>
+
+              <div className="space-y-4">
+
+                <details className="bg-white p-4 rounded shadow">
+                  <summary className="cursor-pointer font-medium">
+                    What causes medical claim denials?
+                  </summary>
+                  <p className="mt-2 text-gray-600">
+                    Claim denials may occur due to incorrect coding,
+                    missing documentation, eligibility issues, or payer
+                    policy violations.
+                  </p>
+                </details>
+
+                <details className="bg-white p-4 rounded shadow">
+                  <summary className="cursor-pointer font-medium">
+                    How can denial management improve revenue?
+                  </summary>
+                  <p className="mt-2 text-gray-600">
+                    By identifying denial causes and correcting claim
+                    errors, healthcare providers can recover lost revenue
+                    and prevent future denials.
+                  </p>
+                </details>
+
+                <details className="bg-white p-4 rounded shadow">
+                  <summary className="cursor-pointer font-medium">
+                    Do you handle claim appeals?
+                  </summary>
+                  <p className="mt-2 text-gray-600">
+                    Yes. Our denial management team prepares appeals,
+                    resubmits corrected claims, and tracks reimbursement
+                    status.
+                  </p>
+                </details>
+
+              </div>
+            </section>
+
+          </article>
+
+          {/* SIDEBAR */}
+          <aside className="space-y-8">
+
+            {/* CTA */}
+            <div className="bg-orange-500 text-white p-6 rounded-lg shadow">
+
+              <h3 className="font-semibold text-lg mb-3">
+                How Can We Help?
+              </h3>
+
+              <p className="text-sm mb-4">
+                Reduce claim denials and improve reimbursement rates with
+                SkyKorg Healthcare’s denial management services.
+              </p>
+
+              <Link
+                href="/contact"
+                className="block bg-black text-white text-center py-2 rounded"
+              >
+                Schedule a Call
+              </Link>
+
+            </div>
+
+            {/* ADVANTAGE */}
+            <div className="bg-white p-6 rounded-lg shadow">
+
+              <h3 className="font-semibold mb-4">
+                SkyKorg Advantage
+              </h3>
+
+              <ul className="space-y-2 text-gray-700 text-sm">
+                <li>✔ Reduced claim denials</li>
+                <li>✔ Faster reimbursement</li>
+                <li>✔ Dedicated RCM specialists</li>
+                <li>✔ HIPAA compliant processes</li>
+              </ul>
+
+            </div>
+
+          </aside>
+
+        </div>
+
+      </section>
+
+      {/* CTA */}
+      <section className="bg-orange-500 text-white py-14 text-center">
+
+        <div className="max-w-4xl mx-auto px-6">
+
+          <h2 className="text-2xl font-semibold mb-4">
+            Recover Revenue from Denied Claims
+          </h2>
+
+          <p className="mb-6">
+            Partner with SkyKorg Healthcare to reduce claim denials and
+            optimize your healthcare revenue cycle management.
+          </p>
+
+          <Link
+            href="/contact"
+            className="bg-black px-8 py-3 rounded"
+          >
+            Request a Demo
+          </Link>
+
+        </div>
+
+      </section>
+
+      <EnquiryForm />
+
+    </main>
+  );
+}

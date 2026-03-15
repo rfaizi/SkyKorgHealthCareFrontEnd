@@ -6,6 +6,7 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import SpecialtiesSection from '@/components/SpecialtiesSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import Testimonial from '@/components/Testimonial';
+import EnquiryForm from '@/components/EnquiryForm';
 import Image from 'next/image';
 import { PhoneIcon } from "@heroicons/react/24/solid";
 import {
@@ -115,6 +116,7 @@ export default function HomePage() {
       <SpecialtiesSection />
       <FeaturesSection />
       <Testimonial />
+      <EnquiryForm />
     </main>
   );
 }
