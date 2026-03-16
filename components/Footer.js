@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-[#000e24] border-t border-gray-800">
-      <div className="container-custom py-16 grid md:grid-cols-4 gap-10 text-gray-400">
+      <div className="container-custom py-12 pl-4 md:pl-0 grid md:grid-cols-4 gap-10 text-gray-400">
         <div>
           <h3 className="text-white font-bold mb-4">SkyKorg Healthcare</h3>
           <p>SkyKorg HealthCare provides reliable medical billing and Revenue Cycle Management (RCM) services to help healthcare providers streamline operations, improve reimbursements, and focus on quality patient care.</p>
@@ -34,7 +34,7 @@ export default function Footer() {
           <p><Link href="mailto:info@skykorghealthcare.com">info@skykorghealthcare.com</Link></p>
         </div>
       </div>
-      <div className="text-center py-6 text-gray-600 border-t border-gray-800">
+      <div className="text-center py-4 pl-4 md:pl-0 text-gray-600 border-t border-gray-800 text-sm">
         © 2026 SkyKorg Healthcare. All rights reserved.
       </div>
     </footer>
