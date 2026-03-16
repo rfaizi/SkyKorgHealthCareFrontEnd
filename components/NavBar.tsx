@@ -265,18 +265,91 @@ export default function NavBar() {
 
         </div>
 
-        {mobileOpen && (
-          <div className="md:hidden border-t bg-white">
-            <div className="container-responsive flex flex-col py-3 gap-2">
-              <Link href="/" onClick={() => setMobileOpen(false)} className="py-2">{content.nav.home}</Link>
-              <Link href="/about" onClick={() => setMobileOpen(false)} className="py-2">{content.nav.about}</Link>
+       {mobileOpen && (
+  <div className="md:hidden border-t bg-white">
+    <nav className="container-responsive flex flex-col py-4 gap-3">
 
+      <Link href="/" onClick={() => setMobileOpen(false)} className="mobile-nav pl-4">
+        {content.nav.home}
+      </Link>
 
-              <Link href="/contact" onClick={() => setMobileOpen(false)} className="py-2">{content.nav.contact}</Link>
+      {/* PROVIDER SOLUTIONS */}
+      <details className="mobile-dropdown">
+        <summary className="mobile-nav pl-4 flex justify-between items-center">
+          {content.nav.providersolution}
+          <ChevronDownIcon className="w-4 h-4" />
+        </summary>
 
-            </div>
-          </div>
-        )}
+        <div className="pl-4 pt-2 flex flex-col gap-2">
+          {Object.entries(content.providersolutions.categories.specialties.items).map(([key,item])=>(
+            <Link
+              key={key}
+              href={`/${content.providersolutions.canonical}/${item.canonical}`}
+              onClick={() => setMobileOpen(false)}
+              className="mobile-subnav"
+            >
+              {item.title}
+            </Link>
+          ))}
+        </div>
+      </details>
+
+      {/* PAYER SOLUTIONS */}
+      <details className="mobile-dropdown">
+        <summary className="mobile-nav pl-4 flex justify-between items-center">
+          {content.nav.payersolutions}
+          <ChevronDownIcon className="w-4 h-4" />
+        </summary>
+
+        <div className="pl-4 pt-2 flex flex-col gap-2">
+          {Object.entries(content.payersolutions.items).map(([key,item])=>(
+            <Link
+              key={key}
+              href={`/${content.payersolutions.canonical}/${item.canonical}`}
+              onClick={() => setMobileOpen(false)}
+              className="mobile-subnav"
+            >
+              {item.title}
+            </Link>
+          ))}
+        </div>
+      </details>
+
+      <Link
+        href="/provider-solutions/dme-billing-services"
+        onClick={() => setMobileOpen(false)}
+        className="mobile-nav pl-4"
+      >
+        {content.nav.dmebilling}
+      </Link>
+
+      <Link
+        href="/provider-solutions/prior-authorization-services"
+        onClick={() => setMobileOpen(false)}
+        className="mobile-nav pl-4"
+      >
+        {content.nav.priorauth}
+      </Link>
+
+      <Link
+        href="/compliance"
+        onClick={() => setMobileOpen(false)}
+        className="mobile-nav pl-4"
+      >
+        {content.nav.compliance}
+      </Link>
+
+      <Link href="/about" onClick={() => setMobileOpen(false)} className="mobile-nav pl-4">
+        {content.nav.about}
+      </Link>
+
+      <Link href="/contact" onClick={() => setMobileOpen(false)} className="mobile-nav pl-4">
+        {content.nav.contact}
+      </Link>
+
+    </nav>
+  </div>
+)}
       </header>
     </>
 

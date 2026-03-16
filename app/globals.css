@@ -49,3 +49,10 @@ min-width:900px;
 .nav-link{
   @apply font-bold text-gray-800 hover:text-orange-500 transition flex items-center gap-1;
 }
+.mobile-nav{
+  @apply py-2 font-medium text-gray-800 border-b;
+}
+
+.mobile-subnav{
+  @apply text-sm text-gray-600 py-1;
+}
