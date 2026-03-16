@@ -9,7 +9,7 @@ export default function DMEBillingPage() {
       
               <div className="absolute inset-0">
                 <Image
-                  src="/assets/images/provider-solutions/provider-hero.jpg"
+                  src="/assets/images/provider-solutions/dme-billing.jpg"
                   alt="Healthcare provider solutions"
                   fill
                   className="object-cover"

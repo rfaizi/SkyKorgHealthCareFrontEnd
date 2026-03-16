@@ -11,7 +11,7 @@ export default function SNFBillingPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/snf-billing.jpg"
+            src="/assets/images/provider-solutions/skilled-nursing-facility-billing.jpg"
             alt="Skilled nursing facility billing services"
             fill
             className="object-cover"

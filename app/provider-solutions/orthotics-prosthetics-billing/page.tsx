@@ -11,7 +11,7 @@ export default function OrthoticsBillingPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
+            src="/assets/images/provider-solutions/orthotics-prosthetics-billing.jpg"
             alt="Healthcare provider solutions"
             fill
             className="object-cover"

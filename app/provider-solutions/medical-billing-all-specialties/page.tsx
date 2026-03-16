@@ -55,7 +55,7 @@ export default function SpecialtiesPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
+            src="/assets/images/provider-solutions/medical-billing-all-specialties.jpg"
             alt="Medical billing specialties"
             fill
             className="object-cover"

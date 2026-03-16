@@ -11,7 +11,7 @@ export default function FertilityBillingPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/fertility-billing.jpg"
+            src="/assets/images/provider-solutions/fertility-clinic-billing.jpg"
             alt="Fertility clinic billing services"
             fill
             className="object-cover"
