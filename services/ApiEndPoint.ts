@@ -1,10 +1,10 @@
 
 //local
-export const BASE_URL = "http://localhost:4000/";
+// export const BASE_URL = "http://localhost:4000/";
 
 
 //live
-// export const BASE_URL = "http://187.77.13.235:4000/";
+export const BASE_URL = "https://skykorghealthcare.com/";
 
 
 export const Origin = 'https://www.abc.com';
