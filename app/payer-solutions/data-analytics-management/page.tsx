@@ -17,7 +17,7 @@ export default function DataAnalyticsPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
+            src="/assets/images/payer-solutions/data-analytics-management-hero.jpg"
             alt="Healthcare Data Analytics Solutions"
             fill
             className="object-cover"

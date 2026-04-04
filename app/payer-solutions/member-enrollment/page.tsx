@@ -17,7 +17,7 @@ export default function MemberEnrollmentPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
+            src="/assets/images/payer-solutions/member-enrollment-hero.jpg"
             alt="Member Enrollment Services"
             fill
             className="object-cover"

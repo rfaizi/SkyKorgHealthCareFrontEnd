@@ -17,7 +17,7 @@ export default function MedicarePartDPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/payer-solutions/payer-hero.jpg"
+            src="/assets/images/provider-solutions/provider-hero.jpg"
             alt="Medicare Part D Services"
             fill
             className="object-cover"

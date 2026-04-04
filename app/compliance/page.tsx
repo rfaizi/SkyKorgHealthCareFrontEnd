@@ -17,7 +17,7 @@ export default function HIPAACompliancePage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
+            src="/assets/images/compliance-hero.jpg"
             alt="HIPAA Compliance"
             fill
             className="object-cover"

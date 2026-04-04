@@ -17,7 +17,7 @@ export default function ClaimsProcessingPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
+            src="/assets/images/payer-solutions/claim-adjudication-hero.jpg"
             alt="Claims Processing Services"
             fill
             className="object-cover"
@@ -29,7 +29,7 @@ export default function ClaimsProcessingPage() {
         <div className="relative max-w-7xl mx-auto px-6">
 
           <h1 className="text-4xl md:text-4xl font-bold max-w-3xl">
-            Fast and Accurate Claims Processing Services for Payers
+            Claims Adjudication
           </h1>
 
           <div className="w-16 h-1 bg-orange-500 mt-4"></div>

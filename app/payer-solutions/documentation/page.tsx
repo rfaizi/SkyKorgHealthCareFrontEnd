@@ -10,7 +10,7 @@ export default function ClinicalDocumentationServices() {
       <section className="relative bg-black text-white">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero/provider-banner.jpg"
+            src="/assets/images/payer-solutions/customized-clinical-documentation-hero.jpg"
             alt="Clinical Documentation Services"
             fill
             className="object-cover opacity-40"
@@ -19,7 +19,7 @@ export default function ClinicalDocumentationServices() {
 
         <div className="relative max-w-7xl mx-auto px-6 py-20">
           <h1 className="text-4xl font-bold max-w-3xl">
-            Customized Clinical Documentation Services: Sun Knowledge Inc
+            Customized Clinical Documentation Services: SkyKorg HealthCare
           </h1>
 
           <div className="w-16 h-1 bg-yellow-500 mt-4"></div>
@@ -175,7 +175,7 @@ export default function ClinicalDocumentationServices() {
           <div className="bg-yellow-400 p-6 border-2 border-black text-center">
 
             <h3 className="font-bold text-lg mb-4">
-              The SunKnowledge Advantage
+              The SkyKorg HealthCare Advantage
             </h3>
 
             <ul className="space-y-3 text-sm font-medium">

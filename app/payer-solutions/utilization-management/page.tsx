@@ -17,7 +17,7 @@ export default function UtilizationManagementPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/payer-solutions/payer-hero.jpg"
+            src="/assets/images/payer-solutions/utilization-management-hero.jpg"
             alt="Utilization Management Services"
             fill
             className="object-cover"

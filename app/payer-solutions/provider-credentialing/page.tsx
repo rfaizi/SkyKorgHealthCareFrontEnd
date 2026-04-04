@@ -17,7 +17,7 @@ export default function CredentialingPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
+            src="/assets/images/payer-solutions/provider-credentialing-and-enrollment-hero.jpg"
             alt="Provider Credentialing Services"
             fill
             className="object-cover"

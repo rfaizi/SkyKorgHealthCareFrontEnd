@@ -17,7 +17,7 @@ export default function ClaimsProcessingPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
+            src="/assets/images/payer-solutions/claims-processing-services-hero.jpg"
             alt="Claims Processing Services"
             fill
             className="object-cover"

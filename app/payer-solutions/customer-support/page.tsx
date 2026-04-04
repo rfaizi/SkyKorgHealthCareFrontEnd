@@ -17,7 +17,7 @@ export default function CustomerSupportPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
+            src="/assets/images/payer-solutions/customer-support-services-hero.jpg"
             alt="Healthcare Customer Support Services"
             fill
             className="object-cover"

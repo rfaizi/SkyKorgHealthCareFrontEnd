@@ -17,7 +17,7 @@ export default function MedicalBillingPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
+            src="/assets/images/payer-solutions/medical-billing-services-hero.jpg"
             alt="Medical Billing Services"
             fill
             className="object-cover"
