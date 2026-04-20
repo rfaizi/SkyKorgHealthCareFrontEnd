@@ -140,13 +140,7 @@ export default function ContactPage() {
 
               <div className="flex items-center gap-4 mb-4">
 
-                <Image
-                  src="/assets/images/testimonial/kevin.jpg"
-                  width={60}
-                  height={60}
-                  alt="David Collins"
-                  className="rounded-full"
-                />
+                
 
                 <div>
                   <p className="font-semibold">
