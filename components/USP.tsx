@@ -1,38 +1,36 @@
-import {
-  UserGroupIcon,
-  BuildingOffice2Icon,
-  ShieldCheckIcon,
-  MapPinIcon
-} from "@heroicons/react/24/outline";
+import { BsPeople } from "react-icons/bs";
+import { FaBuilding } from "react-icons/fa";
+import { MdVerifiedUser } from "react-icons/md";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function HealthcareHighlights() {
   const items = [
     {
-      icon: UserGroupIcon,
+      icon: BsPeople,
       title: "SOLUTIONS FOR PROVIDERS",
       desc: "Discover comprehensive Revenue Cycle Management services including Prior Authorization, Medical Coding, Claims Management, and Accounts Receivable follow-ups to maximize provider revenue."
     },
     {
-      icon: BuildingOffice2Icon,
+      icon: FaBuilding,
       title: "SOLUTIONS FOR FACILITIES",
       desc: "Reduce operational costs and improve efficiency with trained Virtual Medical Assistants and healthcare back-office support tailored for clinics, medical centers, and hospitals."
     },
     {
-      icon: ShieldCheckIcon,
+      icon: MdVerifiedUser,
       title: "SOLUTIONS FOR PAYERS",
       desc: "Our payer solutions include Claims Adjudication, Document Management, Credentialing, and healthcare customer support designed to streamline payer operations."
     },
     {
-      icon: MapPinIcon,
+      icon: FaMapMarkerAlt,
       title: "FACILITIES WE CATER TO",
       desc: "SkyKorg HealthCare supports Independent Practices, Specialty Clinics, Medical Centers, Nursing Homes, and Hospitals with scalable healthcare outsourcing solutions."
     }
   ];
 
   return (
-    <section className="mt-4 md:-mt-[200px] z-40 relative">
+    <section className="mt-4 md:-mt-[200px] z-10 relative">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="bg-white rounded-xl shadow-lg grid md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+        <div className="bg-white rounded shadow-lg grid md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-200">
 
           {items.map((item, index) => {
             const Icon = item.icon;

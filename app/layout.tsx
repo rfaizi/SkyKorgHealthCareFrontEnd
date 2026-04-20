@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import QuoteDrawer from '@/components/QuoteDrawer';
 import { QuoteDrawerProvider } from '@/components/QuoteDrawerContext';
+import FloatingEnquiry from "@/components/FloatingEnquiry";
 
 export const metadata = {
   title: "Medical Billing Company & Revenue Cycle Management (RCM) Services | SkyKorg HealthCare",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <Footer />
           <QuoteDrawer />
+          <FloatingEnquiry />
         </QuoteDrawerProvider>
       </body>
     </html>

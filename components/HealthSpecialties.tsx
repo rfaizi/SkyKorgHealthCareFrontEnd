@@ -1,41 +1,39 @@
-import {
-  HeartIcon,
-  BeakerIcon,
-  AcademicCapIcon,
-  TruckIcon,
-  BeakerIcon as LabIcon,
-  BuildingOffice2Icon
-} from "@heroicons/react/24/outline";
+import { FaGraduationCap } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
+import { FaTruck } from "react-icons/fa";
+import { FaBuilding } from "react-icons/fa";
+import { FaFlask } from "react-icons/fa";
+import { FaVial } from "react-icons/fa";
 
 export default function HealthcareSpecialties() {
   const services = [
     {
-      icon: AcademicCapIcon,
+      icon: FaGraduationCap,
       title: "DME / HME",
       desc: "Our expert services empower leading DME providers with optimized billing, claims processing, and revenue cycle efficiency."
     },
     {
-      icon: HeartIcon,
+      icon: FaHeart,
       title: "Orthotics & Prosthetics (O&P)",
       desc: "Cost-effective billing and documentation support designed for orthotics and prosthetics providers."
     },
     {
-      icon: TruckIcon,
+      icon: FaTruck,
       title: "Skilled Nursing Facilities",
       desc: "Seamless coordination between clinical and administrative teams to deliver value-driven care."
     },
     {
-      icon: BuildingOffice2Icon,
+      icon: FaBuilding,
       title: "Urgent Care",
       desc: "Streamline urgent care revenue cycle operations with faster claim processing and reimbursements."
     },
     {
-      icon: BeakerIcon,
+      icon: FaFlask,
       title: "Radiology",
       desc: "Advanced radiology billing solutions designed to minimize denials and improve reimbursement cycles."
     },
     {
-      icon: LabIcon,
+      icon: FaVial,
       title: "Genomics Laboratory",
       desc: "Accurate lab billing support with strong compliance standards and optimized claim workflows."
     }
@@ -79,7 +77,7 @@ export default function HealthcareSpecialties() {
             return (
               <div
                 key={index}
-                className="group bg-white border p-8 rounded-xl shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-center md:flex-row gap-5"
+                className="group bg-white border p-4 rounded-xl shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-center md:flex-row gap-5"
               >
 
                 {/* Hex Icon */}

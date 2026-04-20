@@ -1,12 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
-
-import {
-  EyeIcon,
-  RocketLaunchIcon,
-  ShieldCheckIcon
-} from "@heroicons/react/24/outline";
+import GetInTouch from "@/components/GetInTouch";
 
 export const metadata = {
   title: "About SkyKorg Healthcare",
@@ -257,7 +251,7 @@ export default function AboutPage() {
 
       </section>
 
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );

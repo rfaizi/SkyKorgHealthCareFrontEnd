@@ -64,7 +64,7 @@ export default function HeroCarousel() {
                   </p>
 
                   <div className="mt-10 flex gap-6">
-                    <button className="bg-orange-500 text-white px-8 py-4 uppercase font-bold hover:bg-orange-600 transition">
+                    <button className="bg-orange-500 rounded text-white px-8 py-4 uppercase font-bold hover:bg-orange-600 transition">
                       INQUIRE NOW
                     </button>
                     

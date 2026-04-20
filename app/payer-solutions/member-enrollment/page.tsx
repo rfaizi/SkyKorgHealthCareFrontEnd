@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import GetInTouch from "@/components/GetInTouch";
 
 export const metadata = {
   title: "Member Enrollment and Eligibility Services | SkyKorg Healthcare",
@@ -222,7 +222,7 @@ export default function MemberEnrollmentPage() {
 
 
       {/* FORM */}
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import GetInTouch from "@/components/GetInTouch";
 
 export const metadata = {
   title: "Accounting & Bookkeeping Services | SkyKorg Healthcare",
@@ -268,7 +268,7 @@ export default function AccountingBookkeepingPage() {
 
       </section>
 
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );

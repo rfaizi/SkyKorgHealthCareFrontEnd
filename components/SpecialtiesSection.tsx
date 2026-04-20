@@ -1,4 +1,4 @@
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import { FaCheckCircle } from "react-icons/fa";
 
 export default function MedicalPractices() {
 
@@ -57,7 +57,7 @@ const renderList = (items) => (
 <ul className="space-y-3">
 {items.map((item, i) => (
 <li key={i} className="flex items-start gap-2 text-gray-700 text-sm">
-<CheckCircleIcon className="w-5 h-5 text-orange-500 flex-shrink-0"/>
+<FaCheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0" />
 <span>{item}</span>
 </li>
 ))}
@@ -93,15 +93,15 @@ and revenue cycle management services.
 {/* Grid */}
 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-<div className="bg-white border p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+<div className="bg-white border p-6 rounded-xl shadow-sm hover:shadow-lg transition">
 {renderList(column1)}
 </div>
 
-<div className="bg-white border p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+<div className="bg-white border p-6 rounded-xl shadow-sm hover:shadow-lg transition">
 {renderList(column2)}
 </div>
 
-<div className="bg-white border p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+<div className="bg-white border p-6 rounded-xl shadow-sm hover:shadow-lg transition">
 {renderList(column3)}
 </div>
 

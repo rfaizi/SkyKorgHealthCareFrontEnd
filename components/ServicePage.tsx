@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import GetInTouch from "@/components/GetInTouch";
 
 export default function ServicePage({ service }) {
 
@@ -155,7 +155,7 @@ export default function ServicePage({ service }) {
 
       </section>
 
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );

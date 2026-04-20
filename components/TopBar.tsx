@@ -4,8 +4,8 @@ import { useState } from 'react';
 import content from '@/data/content.json';
 import products from '@/data/products.json';
 import { useQuoteDrawer } from './QuoteDrawerContext';
-import { EnvelopeIcon } from "@heroicons/react/24/solid";
-import { MapPinIcon } from "@heroicons/react/24/solid";
+import { FiMail } from 'react-icons/fi';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -19,7 +19,7 @@ export default function NavBar() {
 
           {/* Email */}
           <div className="flex items-center gap-2 text-sm">
-            <EnvelopeIcon className="w-4 h-4 text-white" />
+            <FiMail className="w-4 h-4 text-white" />
             <a
               href="mailto:info@skykorghealthcare.com"
               className="hover:text-orange-500 transition break-all"
@@ -30,8 +30,8 @@ export default function NavBar() {
 
           {/* Address */}
           <div className="flex items-center gap-2 text-sm">
-            <MapPinIcon className="w-4 h-4 text-white" />
-            <span>42 Thatcher Drive, Postal Code - R3T2L3</span>
+            <FaMapMarkerAlt className="w-4 h-4 text-white" />
+            <span>30 N Gould St, STE R, Sheridan, WY 82801, USA</span>
           </div>
 
         </div>

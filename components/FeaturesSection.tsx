@@ -1,63 +1,61 @@
-import {
-ShieldCheckIcon,
-DocumentCheckIcon,
-CurrencyDollarIcon,
-ComputerDesktopIcon,
-UserGroupIcon,
-Cog6ToothIcon,
-MapIcon,
-UsersIcon,
-DocumentTextIcon,
-BanknotesIcon
-} from "@heroicons/react/24/outline";
+import { MdVerifiedUser } from "react-icons/md";
+import { FaFileSignature } from "react-icons/fa";
+import { FaDollarSign } from "react-icons/fa";
+import { FaDesktop } from "react-icons/fa";
+import { BsPeople } from "react-icons/bs";
+import { FaCog } from "react-icons/fa";
+import { FaMap } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa";
+import { FaFileAlt } from "react-icons/fa";
+import { FaMoneyBillWave } from "react-icons/fa";
 
 export default function WhySkyKorgFeatures() {
 
 const features = [
 {
-icon: ShieldCheckIcon,
+icon: MdVerifiedUser,
 title: "Rich Payer-Side Experience"
 },
 {
-icon: DocumentCheckIcon,
+icon: FaFileSignature,
 title: "99% Accuracy Rate"
 },
 {
-icon: CurrencyDollarIcon,
+icon: FaDollarSign,
 title: "80% Cost Reduction"
 },
 {
-icon: ComputerDesktopIcon,
+icon: FaDesktop,
 title: "All EHR / EMR Supported"
 },
 {
-icon: UserGroupIcon,
+icon: BsPeople,
 title: "Dedicated Full-Time Resources"
 },
 {
-icon: Cog6ToothIcon,
+icon: FaCog,
 title: "Free Account Manager"
 },
 {
-icon: MapIcon,
+icon: FaMap,
 title: "Serving Across 50 US States"
 },
 {
-icon: UsersIcon,
+icon: FaUsers,
 title: "40+ Medical Specialties"
 },
 {
-icon: DocumentTextIcon,
+icon: FaFileAlt,
 title: "No Binding Contracts"
 },
 {
-icon: BanknotesIcon,
+icon: FaMoneyBillWave,
 title: "All-Inclusive Lowest Pricing"
 }
-];
+]
 
 return (
-<section className="pb-12 bg-gray-50">
+<section className="py-8 bg-gray-50">
 
 <div className="max-w-7xl mx-auto px-6">
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Slider from "react-slick";
-import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/solid";
+import { BsChatDots } from "react-icons/bs";
 
 export default function Testimonials() {
 
@@ -44,7 +44,7 @@ settings: { slidesToShow: 1 }
 };
 
 return (
-<section className="relative py-16 overflow-hidden">
+<section className="relative py-12 overflow-hidden">
 
 <div className="max-w-7xl mx-auto px-6">
 
@@ -67,7 +67,7 @@ What Our Clients Say
 <div className="relative bg-white/5 backdrop-blur-md border rounded-xl p-8 h-full hover:border-orange-500 transition">
 
 {/* Quote Icon */}
-<ChatBubbleLeftRightIcon className="w-8 h-8 text-orange-400 mb-6"/>
+<BsChatDots className="w-8 h-8 text-orange-400 mb-6" />
 
 <p className="leading-relaxed mb-6">
 {item.text}

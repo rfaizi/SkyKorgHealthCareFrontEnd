@@ -1,5 +1,5 @@
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import GetInTouch from "@/components/GetInTouch";
 import Image from "next/image";
 
 export default function OrthoticsBillingPage() {
@@ -264,7 +264,7 @@ export default function OrthoticsBillingPage() {
       </section>
 
       {/* CONTACT FORM */}
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );

@@ -5,7 +5,8 @@ import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function ContactSection() {
+export default function EnquiryFormSec({isDrawer = false}) {
+  const fullWidth = isDrawer ? "md:col-span-2" : "";
 
   const [form, setForm] = useState({
     name: "",
@@ -108,73 +109,42 @@ export default function ContactSection() {
 
 
   return (
-    <section className="relative py-24 overflow-hidden">
-
-      {/* Background */}
-      <div className="absolute inset-0">
-        <Image
-          src="/assets/images/contact-bg.jpg"
-          alt="Healthcare background"
-          fill
-          className="object-cover"
-        />
-      </div>
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/80"></div>
-
-      <div className="relative max-w-7xl mx-auto px-6">
-
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-
-          {/* Left Content */}
-          <div className="text-white">
-
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Get in <span className="text-orange-500">Touch</span>
-            </h2>
-
-            <p className="text-gray-300 leading-relaxed mb-8">
-              Let us know about your needs and discover how SkyKorg HealthCare
-              can streamline your revenue cycle management operations with
-              reliable outsourcing solutions.
-            </p>
-
-            <ul className="space-y-3 text-gray-300">
-              <li>✔ Medical Billing & Coding</li>
-              <li>✔ Prior Authorization Services</li>
-              <li>✔ Accounts Receivable Management</li>
-              <li>✔ Virtual Medical Assistance</li>
-            </ul>
-
-          </div>
-
-          {/* Form */}
-          <div className="bg-white/10 backdrop-blur-lg p-10 rounded-xl border border-white/20">
-
+  
+          <div
+  className={
+    isDrawer
+      ? "bg-white/10 backdrop-blur-lg p-4 rounded-xl border border-white/20"
+      : "bg-white/10 backdrop-blur-lg p-6 rounded-xl border border-white/20"
+  }
+>
             <form
               onSubmit={handleSubmit}
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
             >
 
               {/* Name */}
-              <div>
+              <div className={fullWidth}>
                 <input
                   type="text"
                   value={form.name}
                   onChange={(e) => handleChange("name", e.target.value)}
-                  placeholder="Name*"
-                  className="bg-white/90 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 w-full"
+                  placeholder="Name*"                  
+                  className="bg-white border px-4 py-3 rounded-md w-full
+           text-gray-700 placeholder:text-gray-500
+           focus:outline-none focus:ring-2 focus:ring-orange-500"
+                
                 />
                 {errors.name && <p className="text-red-400 text-sm">{errors.name}</p>}
               </div>
 
               {/* Hear About Us */}
-              <div>
+              <div className={fullWidth}>
                 <select
                   value={form.howDidYouHearAboutUs}
                   onChange={(e) => handleChange("howDidYouHearAboutUs", e.target.value)}
-                  className="bg-white/90 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 w-full"
+                  className="bg-white border px-4 py-3 rounded-md w-full
+           text-gray-700
+           focus:outline-none focus:ring-2 focus:ring-orange-500"
                 >
                   <option value="">How did you hear about us?</option>
                   <option value="Google">Google</option>
@@ -185,25 +155,29 @@ export default function ContactSection() {
               </div>
 
               {/* Email */}
-              <div>
+              <div className={fullWidth}>
                 <input
                   type="email"
                   value={form.email}
                   onChange={(e) => handleChange("email", e.target.value)}
                   placeholder="Email*"
-                  className="bg-white/90 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 w-full"
+                  className="bg-white border px-4 py-3 rounded-md w-full
+           text-gray-700 placeholder:text-gray-500
+           focus:outline-none focus:ring-2 focus:ring-orange-500"
                 />
                 {errors.email && <p className="text-red-400 text-sm">{errors.email}</p>}
               </div>
 
               {/* Phone */}
-              <div>
+              <div className={fullWidth}>
                 <input
                   type="text"
                   value={form.phone}
                   onChange={(e) => handleChange("phone", e.target.value)}
                   placeholder="Phone Number*"
-                  className="bg-white/90 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 w-full"
+                  className="bg-white border px-4 py-3 rounded-md w-full
+           text-gray-700 placeholder:text-gray-500
+           focus:outline-none focus:ring-2 focus:ring-orange-500"
                 />
                 {errors.phone && <p className="text-red-400 text-sm">{errors.phone}</p>}
               </div>
@@ -213,7 +187,9 @@ export default function ContactSection() {
                 <select
                   value={form.serviceInterestedIn}
                   onChange={(e) => handleChange("serviceInterestedIn", e.target.value)}
-                  className="md:col-span-2 bg-white/90 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 w-full"
+                  className="bg-white border px-4 py-3 rounded-md w-full
+           text-gray-700
+           focus:outline-none focus:ring-2 focus:ring-orange-500"
                 >
                   <option value="">What are you interested in?</option>
                   <option value="Medical Billing">Medical Billing</option>
@@ -230,7 +206,7 @@ export default function ContactSection() {
                   value={form.message}
                   onChange={(e) => handleChange("message", e.target.value)}
                   placeholder="Message*"
-                  className="md:col-span-2 bg-white/90 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 w-full"
+                  className="placeholder:text-gray-500 md:col-span-2 bg-white/90 border px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 w-full"
                 ></textarea>
                 {errors.message && <p className="text-red-400 text-sm">{errors.message}</p>}
               </div>
@@ -240,17 +216,13 @@ export default function ContactSection() {
                 CAPTCHA verification
               </div> */}
 
-              <p className="md:col-span-2 text-xs text-gray-300">
+              <p className={isDrawer? "md:col-span-2 text-xs text-gray-900" : "md:col-span-2 text-xs text-gray-300"}>
                 By submitting this form you consent to be contacted regarding
                 your request. Message & data rates may apply.
               </p>
 
               {/* Feedback */}
-              {feedback && (
-                <p className="md:col-span-2 text-green-400 text-sm">
-                  {feedback.message}
-                </p>
-              )}
+              
 
               <button
                 type="submit"
@@ -263,12 +235,6 @@ export default function ContactSection() {
             </form>
 
           </div>
-
-        </div>
-
-      </div>
-
-    </section>
 
   );
 }

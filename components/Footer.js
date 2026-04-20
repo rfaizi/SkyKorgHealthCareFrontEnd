@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { FaPhone } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import { IoLocation } from "react-icons/io5";
 
 export default function Footer() {
   return (
@@ -12,9 +15,7 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-4">Company</h4>
           <ul className="space-y-2">
             <li><Link href="/about">About</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-            {/* <li><Link href="">Careers</Link></li>
-            <li><Link href="">News</Link></li> */}
+            <li><Link href="/contact">Contact</Link></li>            
           </ul>
         </div>
         <div>
@@ -26,12 +27,20 @@ export default function Footer() {
             <li><Link href="/provider-solutions/prior-authorization-services">Prior Auth</Link></li>
             <li><Link href="/compliance">Compliance</Link></li>
             {/* <li><Link href="">Resources</Link></li> */}
-            
+
           </ul>
         </div>
         <div>
-          <h4 className="text-white font-semibold mb-4">Contact</h4>
-          <p><Link href="mailto:info@skykorghealthcare.com">info@skykorghealthcare.com</Link></p>
+          
+            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <p className="flex gap-2 mb-2"> <IoLocation className="w-8 h-8" /> <Link href="mailto:info@skykorghealthcare.com">30 N Gould St, STE R, Sheridan, WY 82801, USA</Link></p>
+            <p className="flex gap-2 items-center mb-2"><FaPhone className="w-4 h-4" /> <Link href="tel:+1 (866) 688 1008">+1 (866) 688 1008</Link></p>            
+            <p className="flex gap-2 items-center"> <FiMail className="w-4 h-4" /> <Link href="mailto:info@skykorghealthcare.com">info@skykorghealthcare.com</Link></p>
+          
+            
+          
+         
+
         </div>
       </div>
       <div className="text-center py-4 pl-4 md:pl-0 text-gray-600 border-t border-gray-800 text-sm">

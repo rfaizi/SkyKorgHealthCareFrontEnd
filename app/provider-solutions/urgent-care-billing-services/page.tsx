@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import GetInTouch from "@/components/GetInTouch";
 
 export default function UrgentCareBillingPage() {
   return (
@@ -255,7 +255,7 @@ export default function UrgentCareBillingPage() {
       </section>
 
       {/* CONTACT COMPONENT */}
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );

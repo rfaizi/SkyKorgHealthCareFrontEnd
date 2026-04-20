@@ -6,7 +6,7 @@ import content from '@/data/content.json';
 import products from '@/data/products.json';
 import { useQuoteDrawer } from './QuoteDrawerContext';
 import Image from 'next/image';
-import { ChevronDownIcon } from '@heroicons/react/24/outline';
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -16,33 +16,38 @@ export default function NavBar() {
 
   return (
     <>
-      <TopBar />
-      <header className="bg-white sticky top-0 z-50 shadow">
+      <div className="hidden md:block">
+        <TopBar />
+      </div>
+
+      <header className="bg-white sticky top-0 z-40 shadow">
 
         <div className="container-responsive max-w-7xl mx-auto">
-          <div className="flex items-center justify-between border-b pl-4 md:pl-0">
+          <div className="flex items-center justify-between border-b p-2 md:p-0">
             <Link href="/" className="text-lg font-semibold hover:text-brand-700">
-              <Image src="/assets/images/logo.png" alt='Logo' width={200} height={60} />
+              <Image src="/assets/images/logo.png" alt='Logo' width={200} height={60} className='w-[90%] md:w-full logo' />
             </Link>
-            <div className="inline-flex items-center px-4 py-3 gap-4">
+            <div className="inline-flex items-center py-2 md:py-3 gap-2 md:gap-4">
 
-              <div className="w-12 h-12 flex items-center justify-center border-2 border-green-600">
+              <div className="w-8 h-8 md:w-10 h-10 rounded flex items-center justify-center border-2 border-green-600">
                 <svg xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 text-green-600"
+                  className="w-4 h-4 md:w-6 h-6 text-green-600"
                   fill="currentColor"
                   viewBox="0 0 24 24">
                   <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C11.85 21 3 12.15 3 2a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" />
                 </svg>
               </div>
 
-              <div className="hidden md:block leading-tight text-right">
+              <div className="leading-tight text-right hidden md:block">
                 <p className="text-gray-700 text-sm">
                   Call us for detail
                 </p>
                 <p className="text-orange-500 font-semibold text-lg">
-                  +1 (888) 370 5125
+                  <Link href="tel:+1 (866) 688 1008">+1 (866) 688 1008</Link>
                 </p>
               </div>
+              <Link href="tel:+1 (866) 688 1008" className='block md:hidden'>CALL US</Link>
+              
 
             </div>
           </div>
@@ -57,7 +62,7 @@ export default function NavBar() {
                   className="nav-link flex items-center gap-1"
                 >
                   {content.nav.providersolution}
-                  <ChevronDownIcon className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
+                  <IoIosArrowDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
                 </Link>
 
                 <div className="mega-menu">
@@ -148,7 +153,7 @@ export default function NavBar() {
                   className="nav-link flex items-center gap-1"
                 >
                   {content.nav.payersolutions}
-                  <ChevronDownIcon className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
+                  <IoIosArrowDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
                 </Link>
 
                 <div className="mega-menu single-column">
@@ -188,7 +193,7 @@ export default function NavBar() {
 
                 <button className="nav-link">
                   {content.nav.resources}
-                  <ChevronDownIcon className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
+                  <IoTriangle className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
                 </button>
 
                 <div className="mega-menu single-column">
@@ -265,91 +270,91 @@ export default function NavBar() {
 
         </div>
 
-       {mobileOpen && (
-  <div className="md:hidden border-t bg-white">
-    <nav className="container-responsive flex flex-col py-4 gap-3">
+        {mobileOpen && (
+          <div className="md:hidden border-t bg-white">
+            <nav className="container-responsive flex flex-col py-4 gap-3">
 
-      <Link href="/" onClick={() => setMobileOpen(false)} className="mobile-nav pl-4">
-        {content.nav.home}
-      </Link>
+              <Link href="/" onClick={() => setMobileOpen(false)} className="mobile-nav pl-4">
+                {content.nav.home}
+              </Link>
 
-      {/* PROVIDER SOLUTIONS */}
-      <details className="mobile-dropdown">
-        <summary className="mobile-nav pl-4 flex justify-between items-center">
-          {content.nav.providersolution}
-          <ChevronDownIcon className="w-4 h-4" />
-        </summary>
+              {/* PROVIDER SOLUTIONS */}
+              <details className="mobile-dropdown">
+                <summary className="mobile-nav pl-4 flex justify-between items-center">
+                  {content.nav.providersolution}
+                  <IoIosArrowDown className="w-4 h-4" />
+                </summary>
 
-        <div className="pl-4 pt-2 flex flex-col gap-2">
-          {Object.entries(content.providersolutions.categories.specialties.items).map(([key,item])=>(
-            <Link
-              key={key}
-              href={`/${content.providersolutions.canonical}/${item.canonical}`}
-              onClick={() => setMobileOpen(false)}
-              className="mobile-subnav"
-            >
-              {item.title}
-            </Link>
-          ))}
-        </div>
-      </details>
+                <div className="pl-4 pt-2 flex flex-col gap-2">
+                  {Object.entries(content.providersolutions.categories.specialties.items).map(([key, item]) => (
+                    <Link
+                      key={key}
+                      href={`/${content.providersolutions.canonical}/${item.canonical}`}
+                      onClick={() => setMobileOpen(false)}
+                      className="mobile-subnav"
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
+              </details>
 
-      {/* PAYER SOLUTIONS */}
-      <details className="mobile-dropdown">
-        <summary className="mobile-nav pl-4 flex justify-between items-center">
-          {content.nav.payersolutions}
-          <ChevronDownIcon className="w-4 h-4" />
-        </summary>
+              {/* PAYER SOLUTIONS */}
+              <details className="mobile-dropdown">
+                <summary className="mobile-nav pl-4 flex justify-between items-center">
+                  {content.nav.payersolutions}
+                  <IoIosArrowDown className="w-4 h-4" />
+                </summary>
 
-        <div className="pl-4 pt-2 flex flex-col gap-2">
-          {Object.entries(content.payersolutions.items).map(([key,item])=>(
-            <Link
-              key={key}
-              href={`/${content.payersolutions.canonical}/${item.canonical}`}
-              onClick={() => setMobileOpen(false)}
-              className="mobile-subnav"
-            >
-              {item.title}
-            </Link>
-          ))}
-        </div>
-      </details>
+                <div className="pl-4 pt-2 flex flex-col gap-2">
+                  {Object.entries(content.payersolutions.items).map(([key, item]) => (
+                    <Link
+                      key={key}
+                      href={`/${content.payersolutions.canonical}/${item.canonical}`}
+                      onClick={() => setMobileOpen(false)}
+                      className="mobile-subnav"
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
+              </details>
 
-      <Link
-        href="/provider-solutions/dme-billing-services"
-        onClick={() => setMobileOpen(false)}
-        className="mobile-nav pl-4"
-      >
-        {content.nav.dmebilling}
-      </Link>
+              <Link
+                href="/provider-solutions/dme-billing-services"
+                onClick={() => setMobileOpen(false)}
+                className="mobile-nav pl-4"
+              >
+                {content.nav.dmebilling}
+              </Link>
 
-      <Link
-        href="/provider-solutions/prior-authorization-services"
-        onClick={() => setMobileOpen(false)}
-        className="mobile-nav pl-4"
-      >
-        {content.nav.priorauth}
-      </Link>
+              <Link
+                href="/provider-solutions/prior-authorization-services"
+                onClick={() => setMobileOpen(false)}
+                className="mobile-nav pl-4"
+              >
+                {content.nav.priorauth}
+              </Link>
 
-      <Link
-        href="/compliance"
-        onClick={() => setMobileOpen(false)}
-        className="mobile-nav pl-4"
-      >
-        {content.nav.compliance}
-      </Link>
+              <Link
+                href="/compliance"
+                onClick={() => setMobileOpen(false)}
+                className="mobile-nav pl-4"
+              >
+                {content.nav.compliance}
+              </Link>
 
-      <Link href="/about" onClick={() => setMobileOpen(false)} className="mobile-nav pl-4">
-        {content.nav.about}
-      </Link>
+              <Link href="/about" onClick={() => setMobileOpen(false)} className="mobile-nav pl-4">
+                {content.nav.about}
+              </Link>
 
-      <Link href="/contact" onClick={() => setMobileOpen(false)} className="mobile-nav pl-4">
-        {content.nav.contact}
-      </Link>
+              <Link href="/contact" onClick={() => setMobileOpen(false)} className="mobile-nav pl-4">
+                {content.nav.contact}
+              </Link>
 
-    </nav>
-  </div>
-)}
+            </nav>
+          </div>
+        )}
       </header>
     </>
 

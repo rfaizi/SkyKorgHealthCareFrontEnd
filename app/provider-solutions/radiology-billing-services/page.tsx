@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import GetInTouch from "@/components/GetInTouch";
 
 export default function RadiologyBillingPage() {
   return (
@@ -241,7 +241,7 @@ export default function RadiologyBillingPage() {
         </div>
       </section>
 
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );

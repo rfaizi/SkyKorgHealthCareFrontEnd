@@ -1,19 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import GetInTouch from "@/components/GetInTouch";
 
-import {
-  DocumentTextIcon,
-  UserGroupIcon,
-  ChartBarIcon,
-  ClipboardDocumentListIcon,
-  CurrencyDollarIcon,
-  ShieldCheckIcon,
-  Cog6ToothIcon,
-  PhoneIcon,
-  LightBulbIcon,
-  IdentificationIcon
-} from "@heroicons/react/24/outline";
+import { FaFileAlt } from "react-icons/fa";
+import { BsPeople } from "react-icons/bs";
+import { FaChartBar } from "react-icons/fa";
+import { FaClipboardList } from "react-icons/fa";
+import { FaDollarSign } from "react-icons/fa";
+import { MdVerifiedUser } from "react-icons/md";
+import { FaCog } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaLightbulb } from "react-icons/fa";
+import { FaIdCard } from "react-icons/fa";
 
 export const metadata = {
   title: "Payor Solutions | SkyKorg Healthcare",
@@ -24,52 +22,52 @@ export const metadata = {
 const services = [
   {
     title: "Claim Processing",
-    icon: Cog6ToothIcon,
+    icon: FaCog,
     desc: "Efficient insurance claim processing solutions designed to improve operational workflows."
   },
   {
     title: "Claim Adjudication",
-    icon: DocumentTextIcon,
+    icon: FaFileAlt,
     desc: "Accurate claim adjudication services ensuring streamlined payer operations."
   },
   {
     title: "Member Enrollment",
-    icon: UserGroupIcon,
+    icon: BsPeople,
     desc: "Efficient enrollment services that enhance member experience and satisfaction."
   },
   {
     title: "Data Management & Analytics",
-    icon: ChartBarIcon,
+    icon: FaChartBar,
     desc: "Advanced healthcare analytics providing insights for better decision making."
   },
   {
     title: "Documentation",
-    icon: ClipboardDocumentListIcon,
+    icon: FaClipboardList,
     desc: "Comprehensive documentation solutions that improve operational efficiency."
   },
   {
     title: "Billing & Collections",
-    icon: CurrencyDollarIcon,
+    icon: FaDollarSign,
     desc: "Reliable billing and collections services that optimize financial outcomes."
   },
   {
     title: "Provider Credentialing",
-    icon: IdentificationIcon,
+    icon: FaIdCard,
     desc: "Credentialing services that ensure providers meet healthcare industry standards."
   },
   {
     title: "Utilization Management",
-    icon: ShieldCheckIcon,
+    icon: MdVerifiedUser,
     desc: "Optimized utilization management solutions that improve healthcare efficiency."
   },
   {
     title: "Customer Care",
-    icon: PhoneIcon,
+    icon: FaPhoneAlt,
     desc: "Dedicated healthcare customer support delivering seamless service experiences."
   },
   {
     title: "Other Payor Solutions",
-    icon: LightBulbIcon,
+    icon: FaLightbulb,
     desc: "Tailored payer services designed to improve engagement and operational efficiency."
   }
 ];
@@ -182,7 +180,7 @@ export default function payersolutions() {
 
       </section>
 
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );

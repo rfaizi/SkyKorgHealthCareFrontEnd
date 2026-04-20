@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import GetInTouch from "@/components/GetInTouch";
 
 export const metadata = {
   title: "Patient Collection Services | SkyKorg Healthcare",
@@ -226,7 +226,7 @@ export default function PatientCollectionPage() {
 
       </section>
 
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );

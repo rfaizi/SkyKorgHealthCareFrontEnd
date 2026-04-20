@@ -6,15 +6,10 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import SpecialtiesSection from '@/components/SpecialtiesSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import Testimonial from '@/components/Testimonial';
-import EnquiryForm from '@/components/EnquiryForm';
 import Image from 'next/image';
-import { PhoneIcon } from "@heroicons/react/24/solid";
-import {
-  UserGroupIcon,
-  BuildingOffice2Icon,
-  ShieldCheckIcon,
-  HeartIcon
-} from "@heroicons/react/24/outline";
+import Link from 'next/link';
+import { FiPhone } from 'react-icons/fi';
+import GetInTouch from '@/components/GetInTouch';
 export default function HomePage() {
   return (
     <main>
@@ -86,7 +81,7 @@ export default function HomePage() {
             {/* CTA */}
             <div className="mt-10 flex flex-col md:flex-row items-center gap-8">
               <a href="#"
-                className="font-bold border px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white transition"
+                className="font-bold border rounded px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white transition"
               >
                 Know More About Us
               </a>
@@ -94,14 +89,14 @@ export default function HomePage() {
               <div className="flex items-center gap-4">
 
                 <div className="bg-gray-200 w-12 h-12 rounded-full flex items-center justify-center">
-                  <PhoneIcon className="w-5 h-5 text-green-600" />
+                  <FiPhone className="w-5 h-5 text-green-600" />
                 </div>
 
                 <div>
                   <div className="text-sm text-gray-800">Or Call us</div>
 
                   <div className="text-orange-600 font-bold text-lg">
-                    <a href="tel:+1 (888) 370 5125">+1 (888) 370 5125</a>
+                    <Link href="tel:+1 (866) 688 1008">+1 (866) 688 1008</Link>
                   </div>
                 </div>
 
@@ -119,7 +114,7 @@ export default function HomePage() {
       <SpecialtiesSection />
       <FeaturesSection />
       <Testimonial />
-      <EnquiryForm />
+      <GetInTouch />
     </main>
   );
 }

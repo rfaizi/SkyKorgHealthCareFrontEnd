@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
-
+import { FaCheckCircle } from "react-icons/fa";
 export default function ClinicalDocumentationServices() {
   return (
     <main>
@@ -22,7 +21,7 @@ export default function ClinicalDocumentationServices() {
             Customized Clinical Documentation Services: SkyKorg HealthCare
           </h1>
 
-          <div className="w-16 h-1 bg-yellow-500 mt-4"></div>
+          <div className="w-16 h-1 bg-orange-500 mt-4"></div>
         </div>
       </section>
 
@@ -42,17 +41,17 @@ export default function ClinicalDocumentationServices() {
 
           <ul className="space-y-3">
             <li className="flex gap-3">
-              <CheckCircleIcon className="w-5 text-yellow-500"/>
+              <FaCheckCircle className="w-5 text-yellow-500"/>
               Challenges adapting to different EMR platforms
             </li>
 
             <li className="flex gap-3">
-              <CheckCircleIcon className="w-5 text-yellow-500"/>
+              <FaCheckCircle className="w-5 text-yellow-500"/>
               Missing treatment information and incorrect documentation
             </li>
 
             <li className="flex gap-3">
-              <CheckCircleIcon className="w-5 text-yellow-500"/>
+              <FaCheckCircle className="w-5 text-yellow-500"/>
               Finding experienced resources and technology expertise
             </li>
           </ul>
@@ -72,22 +71,22 @@ export default function ClinicalDocumentationServices() {
 
             <ul className="mt-6 space-y-3">
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 DRG validation and coding accuracy improvement
               </li>
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Procedural and diagnosis coding optimization
               </li>
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Documentation of patient safety indicators
               </li>
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Hospital acquired conditions documentation
               </li>
             </ul>
@@ -102,27 +101,27 @@ export default function ClinicalDocumentationServices() {
 
             <ul className="space-y-3">
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Simultaneous review of medical records
               </li>
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Clarifications and corrections in coding queries
               </li>
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Follow-ups on delayed physician queries
               </li>
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Resolving DRG discrepancies
               </li>
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Physician education on documentation practices
               </li>
             </ul>
@@ -144,22 +143,22 @@ export default function ClinicalDocumentationServices() {
             <ul className="mt-6 space-y-3">
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Improved documentation workflows
               </li>
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Faster reimbursement cycles
               </li>
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Reduced claim denials
               </li>
 
               <li className="flex gap-3">
-                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                <FaCheckCircle className="w-5 text-yellow-500"/>
                 Better regulatory compliance
               </li>
 
@@ -170,15 +169,15 @@ export default function ClinicalDocumentationServices() {
 
 
         {/* SIDEBAR */}
-        <aside className="space-y-6">
+        <aside className="space-y-6 text-white">
 
-          <div className="bg-yellow-400 p-6 border-2 border-black text-center">
+          <div className="bg-orange-500 p-6 text-center">
 
             <h3 className="font-bold text-lg mb-4">
               The SkyKorg HealthCare Advantage
             </h3>
 
-            <ul className="space-y-3 text-sm font-medium">
+            <ul className="space-y-3">
               <li>We will meet or beat any price</li>
               <li>80% Cost Reduction Guaranteed</li>
               <li>99.9% Accuracy</li>
@@ -193,7 +192,7 @@ export default function ClinicalDocumentationServices() {
 
 
       {/* CTA */}
-      <section className="bg-yellow-500 py-6">
+      <section className="bg-orange-500 py-6">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
 
           <h3 className="font-semibold">
@@ -240,7 +239,7 @@ export default function ClinicalDocumentationServices() {
               <option>What are you interested in?</option>
             </select>
 
-            <button className="bg-yellow-500 text-black px-6 py-3 font-semibold col-span-2">
+            <button className="bg-orange-500 text-black px-6 py-3 font-semibold col-span-2">
               Submit →
             </button>
 

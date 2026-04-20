@@ -1,20 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import {
-  BriefcaseIcon,
-  LinkIcon,
-  DocumentCheckIcon,
-  UsersIcon,
-  CurrencyDollarIcon,
-  MapPinIcon,
-  PhoneIcon,
-  EnvelopeIcon
-} from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useState, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 import { API_URL, ApiEndPoint } from "@/services/ApiEndPoint";
+import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 type ContactFormType = {
   name: string;
@@ -186,20 +178,26 @@ export default function ContactPage() {
               <div className="space-y-4 text-gray-600">
 
                 <div className="flex gap-3">
-                  <MapPinIcon className="w-5 text-orange-500" />
+                  <FaMapMarkerAlt className="w-5 h-5 text-orange-500" />
                   <p>
-                    42 Thatcher drive, Postal code - R3T2L3
+                    30 N Gould St, STE R, Sheridan, WY 82801, USA
                   </p>
                 </div>
 
                 <div className="flex gap-3">
-                  <PhoneIcon className="w-5 text-orange-500" />
-                  <p>+1 (888) 370 5125</p>
+                  <FaPhoneAlt className="w-5 h-5 text-orange-500" />
+                  <p>
+                    <Link href="tel:+18666881008">+1 (866) 688 1008</Link>
+                  </p>
                 </div>
 
                 <div className="flex gap-3">
-                  <EnvelopeIcon className="w-5 text-orange-500" />
-                  <p><Link href="mailto: info@skykorghealthcare.com">info@skykorghealthcare.com</Link></p>
+                  <FiMail className="w-5 h-5 text-orange-500" />
+                  <p>
+                    <Link href="mailto:info@skykorghealthcare.com">
+                      info@skykorghealthcare.com
+                    </Link>
+                  </p>
                 </div>
 
               </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import GetInTouch from "@/components/GetInTouch";
 
 export default function InfusionBillingPage() {
   return (
@@ -239,7 +239,7 @@ export default function InfusionBillingPage() {
         </div>
       </section>
 
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );

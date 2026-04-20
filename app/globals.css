@@ -39,6 +39,10 @@ min-width:900px;
 @apply font-semibold text-gray-900 mb-3 text-sm tracking-wide;
 }
 
+.mega-menu{
+padding: 1rem;
+}
+
 .mega-menu ul li{
 @apply text-gray-600 text-sm py-1 hover:text-orange-500 cursor-pointer;
 }
@@ -55,4 +59,8 @@ min-width:900px;
 
 .mobile-subnav{
   @apply text-sm text-gray-600 py-1;
+}
+
+@media(max-width:991px) {
+  .logo{width: 160px;}
 }

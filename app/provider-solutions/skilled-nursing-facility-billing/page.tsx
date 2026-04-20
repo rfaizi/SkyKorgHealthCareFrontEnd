@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import GetInTouch from "@/components/GetInTouch";
 
 export default function SNFBillingPage() {
   return (
@@ -240,7 +240,7 @@ export default function SNFBillingPage() {
         </div>
       </section>
 
-      <EnquiryForm />
+      <GetInTouch />
 
     </main>
   );
