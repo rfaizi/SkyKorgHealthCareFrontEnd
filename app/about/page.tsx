@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GetInTouch from "@/components/GetInTouch";
+import { FaEye } from "react-icons/fa";
 
 export const metadata = {
   title: "About SkyKorg Healthcare",
@@ -136,7 +137,7 @@ export default function AboutPage() {
 
             <div>
 
-              <EyeIcon className="w-12 h-12 mx-auto text-orange-500 mb-4" />
+              <FaEye className="w-12 h-12 mx-auto text-orange-500 mb-4" />
 
               <h3 className="font-semibold text-lg mb-2">
                 Vision
