@@ -137,7 +137,7 @@ export default function AboutPage() {
 
             <div>
 
-              <FaEye className="w-12 h-12 mx-auto text-orange-500 mb-4" />
+              
 
               <h3 className="font-semibold text-lg mb-2">
                 Vision
@@ -152,7 +152,7 @@ export default function AboutPage() {
 
             <div>
 
-              <RocketLaunchIcon className="w-12 h-12 mx-auto text-orange-500 mb-4" />
+              
 
               <h3 className="font-semibold text-lg mb-2">
                 Mission
@@ -167,7 +167,7 @@ export default function AboutPage() {
 
             <div>
 
-              <ShieldCheckIcon className="w-12 h-12 mx-auto text-orange-500 mb-4" />
+              
 
               <h3 className="font-semibold text-lg mb-2">
                 Value
